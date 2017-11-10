@@ -1,0 +1,103 @@
+/*Style page for Ace in the Hole website.*/
+
+
+/*Compiled by Holden Bleyle on 11/7/2017.*/
+
+/*=== CONSTANTS ===*/
+
+@headerfont: 'Days One', sans-serif;
+@normalfont: 'Ubuntu Condensed', sans-serif;
+
+@accentcolor1: #c4ecff;
+@accentcolor2: #61b2d8;
+@accentcolor3: #b7b7b7;
+
+/*=== GLOBAL STYLE ===*/
+
+body{
+    font-family: @normalfont;
+    }
+
+h2{
+    font-size: 1.5em;
+    font-family: @headerfont;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+ 
+p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*=== NAVBAR STYLE ===*/
+
+.active{
+    background-color: @accentcolor2;
+}
+
+.navbar-brand{
+    font-family: @headerfont;
+}
+
+/*=== HERO STYLE ===*/
+
+#heroheader h1{
+    font-family: @headerfont;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+#heroheader p{
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 0;
+}
+
+#heroheader {
+    background-image: url("../img/heroimage.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    color: #000000;
+    min-height: 300px;
+    
+}
+
+/*=== FOOTER STYLE ===*/
+
+footer {
+    padding-top: 10px;
+    text-align: center;
+    font-size: .9em;
+    line-height: .8em;
+    background-color: @accentcolor1;
+}
+
+/*=== RESPONSIVE STYLE ===*/
+
+/*=== DESKTOP ===*/
+
+@media screen and (min-width: 750px) {
+    #heroheader h1{
+        font-size: 5em;
+    }
+    #heroheader p{
+        font-size: 2.4em;
+    }
+    h2{
+        font-size: 2.2em;
+    }
+    p{
+        font-size: 1.2em;
+    }
+}
