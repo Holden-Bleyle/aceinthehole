@@ -18,7 +18,7 @@ p {
 }
 /*=== NAVBAR STYLE ===*/
 .active {
-  background-color: #61b2d8;
+  background-color: #840000;
 }
 .navbar-brand {
   font-family: 'Days One', sans-serif;
@@ -57,7 +57,10 @@ footer {
   text-align: center;
   font-size: .9em;
   line-height: .8em;
-  background-color: #c4ecff;
+  background-color: #ff4242;
+  border: 2px;
+  border-color: #840000;
+  border-style: solid;
 }
 /*=== RESPONSIVE STYLE ===*/
 /*=== DESKTOP ===*/
