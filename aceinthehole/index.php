@@ -1,22 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<!--HEAD SECTION-->
-
-<head>
-    <meta charset="utf-8">
-    <!--IMPORT LINKS-->
-    <!--BOOTSTRAP-->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <!--MAIN STYLE-->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <!--GOOGLE FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Days+One|Ubuntu+Condensed" rel="stylesheet">
-</head>
-
-    <!-- Runs a js file that checks the width of the window, then determines if it should show/hide parts of the page.-->
-<body onload="contentCheck();" onresize="contentCheck();">
-    <!--HEADER STARTS HERE-->
-    <?php include 'header.php'; ?>
+<?php include 'header1.php'; ?>
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="togglablecontent"><a href="about.php">About</a></li>
+            <li class="togglablecontent"><a href="events.php">Events</a></li>
+            <li class="togglablecontent"><a href="faq.php">FAQ</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="registration.php">Registration</a></li>
+            <li><a href="gallery.php">Gallery</a></li>
+        </ul>
+    </div>
+<?php include 'header2.php'; ?>
     <!--HEADER ENDS HERE-->
     <!--MAIN CONTENT STARTS HERE-->
     <main>
@@ -37,9 +31,3 @@
     <!--MAIN CONTENT ENDS HERE-->
     <!--FOOTER STARTS HERE-->
     <?php include 'footer.php'; ?>
-    <!--JAVASCRIPT IMPORT-->
-    <script src="assets/js/jquery-3.2.1.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
-</body>
-</html>
