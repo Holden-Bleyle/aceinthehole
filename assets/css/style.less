@@ -1,0 +1,218 @@
+/*Style page for Ace in the Hole website.*/
+
+
+/*Compiled by Holden Bleyle on 11/7/2017.*/
+
+/*=== CONSTANTS ===*/
+
+@headerfont: 'Days One', sans-serif;
+@normalfont: 'Ubuntu Condensed', sans-serif;
+
+@accentcolor1: #ff4242;
+@accentcolor2: #840000;
+@accentcolor3: #b7b7b7;
+
+/*=== GLOBAL STYLE ===*/
+
+body{
+    font-family: @normalfont;
+    }
+
+.formresponse{
+    font-size: 24px;
+}
+
+h2{
+    font-size: 1.5em;
+    font-family: @headerfont;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+ 
+p{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.2em;
+}
+
+th{
+        font-size: 1.5em;
+        text-align: left;
+    }
+    td{
+        font-size: 1.5em;
+        text-align: left;
+    }
+table{
+    margin-left: 40%;
+    margin-right: 10%;
+}
+
+li{
+    list-style: none;
+}
+ul{
+    text-align: center;
+    list-style: none;
+}
+
+.day{
+    text-align: center;
+}
+
+/*=== NAVBAR STYLE ===*/
+
+.active{
+    background-color: @accentcolor2;
+}
+
+.navbar-brand{
+    font-family: @headerfont;
+}
+
+/*=== HERO STYLE ===*/
+
+#heroheader h1{
+    font-family: @headerfont;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+#heroheader p{
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 0;
+}
+
+#heroheader {
+    background-image: url("../img/heroimage.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    color: #000000;
+    min-height: 300px;
+    
+}
+
+/*=== FOOTER STYLE ===*/
+
+footer {
+    padding-top: 10px;
+    text-align: center;
+    font-size: .9em;
+    line-height: .8em;
+    background-color: @accentcolor1;
+    border: 2px;
+    border-color: @accentcolor2;
+    border-style: solid;
+}
+
+/*=== FORM STYLE ===*/
+
+#contactheader {
+    margin-left: 20%;
+}
+
+form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    font-size: 1.3em;
+}
+
+.notradio {
+    width: 80%;
+    
+}
+
+input[type=radio] {
+    text-align: left;
+    width: 10%;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+    resize: none;
+}
+
+/*=== GALLERY STYLE ===*/
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+        width: 49.99%;
+        margin: 6px 0;
+        float: left;
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*=== RESPONSIVE STYLE ===*/
+
+/*=== DESKTOP ===*/
+
+@media screen and (min-width: 750px) {
+    #heroheader h1{
+        font-size: 5em;
+    }
+    #heroheader p{
+        font-size: 2.4em;
+    }
+    h2{
+        font-size: 2.2em;
+    }
+    p{
+        font-size: 1.2em;
+    }
+    th{
+        font-size: 1.5em;
+        text-align: left;
+    }
+    td{
+        font-size: 1.5em;
+        text-align: left;
+    }
+    ul{
+        font-size: 1.2em;
+    }
+}
